@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { TokenAllocation, ValidationError } from "../types";
-import { validateAllocations } from "../utils/validators";
+import { TokenAllocation, ValidationError } from "../../types";
+import { validateAllocations } from "../../utils/validators";
 
 export function useAllocationEditor(initialAmount: string) {
   const [allocations, setAllocations] = useState<TokenAllocation[]>([]);

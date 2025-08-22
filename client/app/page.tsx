@@ -1,4 +1,4 @@
-import AISuggestionForm from "@/components/custom/AISuggestionForm";
+import { AISuggestionForm } from "@/components/ai-suggestion";
 
 export default function Home() {
   return (

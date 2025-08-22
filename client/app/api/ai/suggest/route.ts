@@ -43,7 +43,7 @@ export async function POST(
 
     // Initialize Gemini client with API key from .env
     const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" }); // Efficient model for quick responses
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
     // Parse and validate request body
     let requestBody: RequestBody;
@@ -164,7 +164,7 @@ export async function POST(
       };
     }
 
-    // Return response to frontend
+    // Return response to frontend (NO contract integration here)
     return NextResponse.json({
       success: true,
       data: parsedOutput,
